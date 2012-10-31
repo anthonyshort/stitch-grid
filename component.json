@@ -2,9 +2,9 @@
   "name": "stitch-grid",
   "version": "0.1.0",
   "author": "Anthony Short",
-  "main": "_grid.sass",
+  "main": "_stitch-grid.sass",
   "depedencies": {
-    "stitch-utils": "latest",
-    "stitch-breakpoints": "latest"
+    "stitch-utils": "*",
+    "stitch-breakpoints": "*"
   }
 }
