@@ -1,3 +1,5 @@
+@import 'stitch-breakpoints'
+
 $grid-columns: 12 !default
 $grid-column-width: 60px !default
 $grid-gutter-width: 30px !default
@@ -11,6 +13,11 @@ $grid-baseline: 10px !default
 
 @function grid-gutter($n)
   @return $n * $grid-gutter-width
+
+@mixin grid-background($column-color: rgba(255,0,0,0.2), $baseline-color: rgba(0,0,0,0.3))
+  background: -webkit-linear-gradient(top, $baseline-color 1px, transparent 1px), -webkit-linear-gradient(left, $column-color 0, $column-color $grid-column-width, transparent $grid-column-width)
+  background-size: $grid-baseline $grid-baseline, ($grid-column-width + $grid-gutter-width) $grid-baseline
+  background-position: 0 ($grid-baseline - 1)
 
 .grid
   @include clear-floats
