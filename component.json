@@ -1,0 +1,10 @@
+{
+  "name": "stitch-grid",
+  "version": "0.1.0",
+  "author": "Anthony Short",
+  "main": "_grid.sass",
+  "depedencies": {
+    "stitch-utils": "latest",
+    "stitch-breakpoints": "latest"
+  }
+}
